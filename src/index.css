@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --clr-bg-dark: #262427;
+  --clr-bg-light: #fafafa;
+
+  --clr-text-dark: #262429;
+  --clr-text-light: #fafafa;
+
+  --pink-gradient: linear-gradient(
+    144.39deg,
+    #0c0b0c -278.56%,
+    #6d6d6d -78,47%,
+    #bb16bb 91.61%
+
+  );
+
+  --black-gradient: linear-gradient(
+    144.39deg,
+    #b7d6f3 -278.56%,
+    #4378aa -78.47%,
+    #3a42bb 91.61%
+  );
+
+  --white-gradient: linear-gradient(
+    144.39deg,
+    #f3f3f3 -278.56%,
+    #ceb3b3 -78.47%,
+    #d8d6eb 91.61%
+  );
+
+  --card-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
+
+  --scrollbar-primary: #00040f;
+  --scrollbar-secondary: rgb(208, 223, 240);
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar-secondary) var(--scrollbar-primary);
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 15px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--scrollbar-primary);
+  border-radius: 0px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-secondary);
+  border-radius: 14px;
+  border: 3px solid var(--scrollbar-primary);
+}
+
+.dark {
+  background-color: var(--clr-bg-dark);
+  color: var(--clr-text-light);
+}
+
+.light {
+  background-color: var(--clr-bg-light);
+  color: var(--clr-text-dark);
+}
+
+.pink {
+  color: #bb16bb;
+}
+
+.blue {
+  color: #1A93EB;
+}
+
+.bg-card-green {
+  background-color: #3E7E4C;
+}
+
+.bg-card-blue {
+  background-color: #2C7CA9;
+}
+
+.bg-card-red {
+  background-color: #E35353;
+}
+
+.bg-gradient {
+  background: linear-gradient(125.17deg, #272727 0%, #11101d 100%);
+}
+
+.bg-blue-gradient {
+  background: linear-gradient(
+    157.81deg,
+    #def9fa -43.27%,
+    #c4bef5 -21.24%,
+    #9dc1f0 12.19%,
+    #7da9eb 29.82%,
+    #5c98e6 51.94%,
+    #3357cf 90.29%
+  );
+}
+
+.bg-pink-gradient {
+  background: linear-gradient(
+    157.81deg,
+    #def9fa -43.27%,
+    #f3bef5 -21.24%,
+    #f09df0 12.19%,
+    #eb7deb 29.82%,
+    #e65cc8 51.94%,
+    #ca33cf 90.29%
+  );
+}
+
+.black__gradient {
+  background: linear-gradient(75deg, #26232A 0%,
+  #fc67fa 100%);
+  filter: blur(123px);
+}
+
+.blue__gradient {
+  background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #214d76 100%);
+  filter: blur(123px);
+}
+
+.pink__gradient {
+  background: linear-gradient(300deg, #2D2230 0% #5C2871 70%);
+  filter: blur(700px);
+}
+
+.white__gradient {
+  background: rgba(5, 3, 3, 0.6);
+  filter: blur(750px);
+}
+
+.feedback-container .feedback-card:last-child {
+  margin-right: 0px;
+}
+
+.feedback-card {
+  background: transparent;
+}
+
+.feedback-card:hover {
+  background: var(--black-gradient);
+}
+/* * {
+  scroll-behavior: smooth;
+}
+
+.text-gradient {
+  background: radial-gradient(
+    64.18% 64.18% at 71.16% 35.69%,
+    #def9fa 0.89%,
+    #bef3f5 17.23%,
+    #9dedf0 42.04%,
+    #7de7eb 55.12%,
+    #33bbcf 100%
+  );
+  Determines the background painting area.
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+} */
+
+/* tooltip */
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 100px;
+  background-color: rgb(10, 10, 10);
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 6;
+  top: 150%;
+  left: 50%;
+  margin-left: -50px;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
