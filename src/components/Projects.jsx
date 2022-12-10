@@ -1,10 +1,17 @@
 import styles from '../style';
-import React from "react";
+import React, {MouseEvent} from "react";
 
 import { AiFillGithub } from "react-icons/ai";
 import { BsLink45Deg } from "react-icons/bs";
 
 import {projects} from '../constants';
+import HoverVideoPlayer from 'react-hover-video-player';
+
+// const [hover, setHover] = useState(false);
+
+const imageClick = () => {
+  console.log('Click');
+}
 
 const TechIcon = ({id, index, icon, name}) => (
     <div className="flex flex-col">
@@ -24,7 +31,7 @@ const TechIcon = ({id, index, icon, name}) => (
   </div>
 )
 
-const ProjectCard = ({ index, title, description, image, github, url, stack }) => (
+const ProjectCard = ({ index, title, description, image, video, github, url, stack }) => (
   <>
   <div className={`flex ${index % 2 !== 0 ? 'md:flex-row' : 'md:flex-row-reverse'}  flex-col ${styles.flexCenter} md:my-0 my-10 xl:mt-[35px] relative w-full`}>
     <div  className={`flex-1 ${index % 2 !== 0 ? 'text-left' : 'text-right'} justify-between items-center w-full `}>
@@ -70,7 +77,39 @@ const ProjectCard = ({ index, title, description, image, github, url, stack }) =
         
   
   <div className={`flex-1 ${styles.flexCenter} items-center justify-between md:my-0 my-10 relative border-2 border-rose-600`}>
-    <img src={image} alt="{image}" className={`w-[100%] h-[100%] z-[5] sm:pr-0 `} />
+    {
+      true ? (
+        <HoverVideoPlayer
+      videoSrc={video}
+      pausedOverlay={
+        <img
+          src={image}
+          alt="{image}"
+          style={{
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover',
+          }}
+          className="className={`w-[100%] h-[100%] z-[5] sm:pr-0"
+        />
+      }
+      loadingOverlay={
+        <div className="loading-overlay">
+          <div className="loading-spinner" />
+        </div>
+      }
+    />
+      ) : (
+        <img 
+      src={image} 
+      alt="{image}" 
+      className={`w-[100%] h-[100%] z-[5] sm:pr-0 `} 
+      onClick={() => {imageClick()} }
+      />
+      )}
+    
+
+    
     {/* <div className="absolute z-[0] w-[40%] h-[35%] top-0  pink__gradient"  /> */}
     {/* <div className="absolute z-[1] w-[80%] h-[80%] rounded-full bottom-40 white__gradient" /> */}
     {/* <div className="absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 black__gradient" /> */}

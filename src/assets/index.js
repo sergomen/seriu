@@ -12,6 +12,13 @@ import ninjamir from "./ninjamir.png";
 import spectro from "./spectro-helper.png";
 import tico from "./tico.png";
 
+import portfolio_video from "./videos/portfolio_video.mp4";
+import cadosdev_video from "./videos/cadosdev_video.mp4";
+import ninjamir_video from "./videos/ninjamir_video.mp4";
+import spectrohelper_video from "./videos/spectrohelper_video.mp4";
+import tico_video from "./videos/tico_video.mp4";
+
+
 import dennisivy from "./dennisivy-logo.png";
 import ninjamir_logo from "./ninjamir-logo.png";
 
@@ -38,6 +45,12 @@ export {
     ninjamir,
     spectro,
     tico,
+
+    portfolio_video,
+    cadosdev_video,
+    ninjamir_video,
+    spectrohelper_video,
+    tico_video,
 
     dennisivy,
     ninjamir_logo,

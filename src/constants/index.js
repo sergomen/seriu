@@ -1,4 +1,5 @@
 import {portfolio, cados, ninjamir, spectro, tico} from "../assets";
+import {portfolio_video, cadosdev_video, ninjamir_video, spectrohelper_video, tico_video} from "../assets";
 import {dennisivy, ninjamir_logo} from "../assets";
 import {github, discord, twitter, linkedin} from '../assets';
 
@@ -66,6 +67,7 @@ export const projects = [
         title: "Portfolio",
         description: "This is my portfolio website based on React to represent myself and my skills.",
         image: portfolio,
+        video: portfolio_video,
         github: "",
         url: "https://seriu.netlify.com",
         stack: [
@@ -92,6 +94,7 @@ export const projects = [
         title: "Cados.dev",
         description: "The application represents developeradvocates from Twitter. It helps people to find their advocate through name, technologies, company.",
         image: cados,
+        video: cadosdev_video,
         github: "https://github.com/sergomen/agorapi-frontend",
         url: "https://cados-dev.netlify.com",
         stack: [
@@ -118,6 +121,7 @@ export const projects = [
         title: "Ninjamir",
         description: "The app based on Django is a game about goals achievement and time management. Ninjamir makes people to be more productive.",
         image: ninjamir,
+        video: ninjamir_video,
         github: "https://github.com/sergomen/ninjamir",
         url: "",
         stack: [
@@ -149,6 +153,7 @@ export const projects = [
         title: "Spectro-Helper",
         description: "This project is dedicated to the famous collectible card game 'Spectromancer'. The application reads information from the screen and allows the player to better plan the strategy without holding enemy cards in his head.",
         image: spectro,
+        video: spectrohelper_video,
         github: "https://github.com/sergomen/spectro-helper",
         url: "",
         stack: [
@@ -175,6 +180,7 @@ export const projects = [
         title: "Tico",
         description: "Tico written in Flask provides information from Google Sheets in more comfortable format and let users to put data into tables. Tico is one of the part for the game with time management like Ninjamir.",
         image: tico,
+        video: tico_video,
         github: "https://github.com/sergomen/tico",
         url: "https://msgusapythonanywhere.com",
         stack: [
