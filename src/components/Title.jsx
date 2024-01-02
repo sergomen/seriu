@@ -1,7 +1,7 @@
 import React from 'react'
 import { title} from '../assets';
 import styles from "../style";
-import Button from "./Button";
+// import Button from "./Button";
 
 const Title = () => (
   <section id="title" className={`flex md:flex-row flex-col ${styles.paddingY}`}>
@@ -18,7 +18,7 @@ const Title = () => (
         <span className="blue">Seriu</span>, 
           <span className="pink ss:leading-[12px] leading-[15px]" > FULL STACK WEB DEVELOPER</span>
           <h3 className="flex-1 font-poppins font-semibold ss:text-[22px] text-[12px] ss:leading-[32px] leading-[25px]">
-          I passionate about programming, make decision & building creative and useful apps.
+          I passionate about programming, making decision & building creative apps.
           </h3>
         </h1>
         {/* <img src={title} alt="title" className={`ss:w-[70%] w-[100%] ss:h-[50%] h-[100%] relative z-[5]`}/> */}
@@ -27,7 +27,7 @@ const Title = () => (
     </div>
     
     <div className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative`}>
-        <img src={title} alt="title" className="w-[100%] h-[80%] relative z-[5]" />
+        <img src={title} alt="title" className="w-[100%] h-[80%] relative z-[5] object-cover" />
         <div className="absolute z-[0] w-[40%] h-[35%] top-0  pink__gradient"  />
         
         {/* <div className="absolute z-[1] w-[80%] h-[80%] rounded-full bottom-40 white__gradient" /> */}

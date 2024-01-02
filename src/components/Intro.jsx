@@ -25,7 +25,7 @@ const Intro = () => (
             </h3>
           </h1>
           <br />
-          <div className="md:flex xl:flex xl:flex xs:flex-1 justify-between">
+          <div className="md:flex xl:flex xs:flex-1 justify-between">
             {interests.map((card) => (
               <InterestCard key={card.id} {...card} />
             ))}

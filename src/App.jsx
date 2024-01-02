@@ -4,7 +4,7 @@ import {useState} from 'react';
 import styles from "./style";
 import { Navbar, Title, Intro, Projects, Experience, Testimonials, Contact, Footer } from './components';
 
-import useDarkSide from "./hook/useDarkSide";
+// import useDarkSide from "./hook/useDarkSide";
 import Button from './components/Button';
 import resume from './assets/resume.pdf';
 
@@ -24,6 +24,7 @@ const App = () => {
         <Navbar 
           darkMode={darkMode}
           toggleDarkMode={toggleDarkMode}
+          name="top"
         />
       </div>
     </div>

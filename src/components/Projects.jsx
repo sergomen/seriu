@@ -33,15 +33,13 @@ const TechIcon = ({id, index, icon, name}) => (
 
 const ProjectCard = ({ index, title, description, image, video, github, url, stack }) => (
   <>
-  <div className={`flex ${index % 2 !== 0 ? 'md:flex-row' : 'md:flex-row-reverse'}  flex-col ${styles.flexCenter} md:my-0 my-10 xl:mt-[35px] relative w-full`}>
-    <div  className={`flex-1 ${index % 2 !== 0 ? 'text-left' : 'text-right'} justify-between items-center w-full `}>
-      
+  <div className={`flex ${index % 2 !== 0 ? 'md:flex-row' : 'md:flex-row-reverse'} flex-col ${styles.flexCenter} md:my-0 my-10 xl:mt-[35px] relative w-full`}>
+    <div  className={`flex-1 ${index % 2 !== 0 ? 'text-left' : 'text-right'} justify-between items-center w-full`}>
       <h1 className="flex-1 font-poppins font-semibold ss:text-[32px] text-[42px] mt-[50px] ss:leading-[72px]">
         {title}
       </h1>
       <h3 className="flex-1 font-poppins font-semibold xs:text-[12px] ss:text-[16px]  lg:text-[22px] xl:text-[22px] xs:leading-[22px] ss:leading-[22px] ;md:leading-[24px] lg:leading-[24px] xl:leading-[44px]">
         {description} <br />
-
         {/* {github} {url} */}
         <br />
         <div className={`flex  ${index % 2 !== 0 ? 'flex-row' : 'flex-row-reverse'}`}>
@@ -73,47 +71,42 @@ const ProjectCard = ({ index, title, description, image, video, github, url, sta
         )}
         </div>
       </h3>
+    </div> 
+    <div className={`flex-1 ${styles.flexCenter} md:my-0 my-10 relative border-2 border-rose-600 w-full`}>
+      {
+        true ? (
+          <HoverVideoPlayer
+            videoSrc={video}
+            style={{
+              width: '100%',
+              height: '100%',
+              objectFit: 'cover',
+            }}
+            pausedOverlay={
+              <img
+                src={image}
+                alt="image"
+                className={`w-[100%] h-[100%] z-[5] sm:pr-0`}
+              />
+            }
+            loadingOverlay={
+              <div className="loading-overlay">
+                <div className="loading-spinner" />
+              </div>
+            }   
+          />
+        ) : (
+          <img 
+            src={image} 
+            alt="image" 
+            className={`w-[100%] h-[100%] z-[5] sm:pr-0`} 
+            onClick={() => {imageClick()} }
+          />
+        )} 
+      {/* <div className="absolute z-[0] w-[40%] h-[35%] top-0  pink__gradient"  /> */}
+      {/* <div className="absolute z-[1] w-[80%] h-[80%] rounded-full bottom-40 white__gradient" /> */}
+      {/* <div className="absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 black__gradient" /> */}
     </div>
-        
-  
-  <div className={`flex-1 ${styles.flexCenter} items-center justify-between md:my-0 my-10 relative border-2 border-rose-600`}>
-    {
-      true ? (
-        <HoverVideoPlayer
-      videoSrc={video}
-      pausedOverlay={
-        <img
-          src={image}
-          alt="{image}"
-          style={{
-            width: '100%',
-            height: '100%',
-            objectFit: 'cover',
-          }}
-          className="className={`w-[100%] h-[100%] z-[5] sm:pr-0"
-        />
-      }
-      loadingOverlay={
-        <div className="loading-overlay">
-          <div className="loading-spinner" />
-        </div>
-      }
-    />
-      ) : (
-        <img 
-      src={image} 
-      alt="{image}" 
-      className={`w-[100%] h-[100%] z-[5] sm:pr-0 `} 
-      onClick={() => {imageClick()} }
-      />
-      )}
-    
-
-    
-    {/* <div className="absolute z-[0] w-[40%] h-[35%] top-0  pink__gradient"  /> */}
-    {/* <div className="absolute z-[1] w-[80%] h-[80%] rounded-full bottom-40 white__gradient" /> */}
-    {/* <div className="absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 black__gradient" /> */}
-  </div>
   </div>
   </>    
 )
