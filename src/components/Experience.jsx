@@ -28,8 +28,8 @@ const ExperienceCard = (props) => {
     // transition={{ duration: 1 }}
     // >
     <>
-      <div className={`flex md:flex-row flex-col  md:my-0 my-10 xl:mt-[35px] relative w-full`}>
-      {props.link != "" ? (
+      <div className={`flex md:flex-row flex-col  md:my-0 my-10 md:mt-6 xl:mt-[35px] relative w-full`}>
+        {props.link != "" ? (
           <a href={props.link} target="_blank" className="hover:text-teal-200">
             <img
               src={props.logo}
@@ -56,6 +56,7 @@ const ExperienceCard = (props) => {
       <ol className="relative border-l border-gray-200 dark:border-gray-700 ml-6">
         {props.positions.map((position, index) => (
           <li
+            key={index}
             className={`${
               index === props.positions.length - 1 ? "mb-0" : "mb-4"
             } ml-4`}

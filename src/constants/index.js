@@ -62,7 +62,7 @@ export const interests = [
     {
         id: "interest-1",
         title: "Programming",
-        content: "It helps me to understand complicated things and make life more easy and interesting.",
+        content: "It helps me understand complicated things and make my life better.",
         bgcolor: "bg-card-green",
     },
     {
