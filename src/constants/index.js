@@ -1,6 +1,6 @@
-import {loopka, lifevent, arcanist, ifo, blog, habites, linear_regression, portfolio, cados, ninjamir, spectro, tico} from "../assets";
+import {pomogoo, loopka, lifevent, arcanist, ifo, blog, habites, linear_regression, portfolio, cados, ninjamir, spectro, tico} from "../assets";
 import {loopka_video, lifevent_video, arcanist_video, ifo_video, habites_video, portfolio_video, cadosdev_video, ninjamir_video, spectrohelper_video, tico_video} from "../assets";
-import {hacktoberfest2023_logo, dennisivy_logo, ninjamir_logo} from "../assets";
+import {hacktoberfest2024_logo, hacktoberfest2023_logo, dennisivy_logo, ninjamir_logo} from "../assets";
 import {github, twitter, linkedin} from '../assets';
 
 import {
@@ -80,6 +80,39 @@ export const interests = [
 ];
 
 export const projects = [
+    {
+        id: "projects-13",
+        index: 13,
+        date: "Oct 30 2024 - Nov 3 2024",
+        title: "PomoGoo",
+        description: "PomoGoo is a Pomodoro technique-based app. It also allows you to compare your total work time with that of other users. This feature provides motivation and inspiration to achieve higher levels of productivity.",
+        image: pomogoo,
+        video: "",
+        github: "https://github.com/sergomen/pomogoo",
+        url: "https://pomogoo.vercel.app/",
+        stack: [
+            {
+                id: "icon-1",
+                icon: SiNextdotjs,
+                name: "Next.js"
+            },
+            {
+                id: "icon-2",
+                icon: SiTailwindcss,
+                name: "TailwindCSS"
+            },
+            {
+                id: "icon-3",
+                icon: SiMongodb,
+                name: "Mongodb"
+            },
+            {
+                id: "icon-4",
+                icon: SiMongoose,
+                name: "Mongoose"
+            },
+        ]
+    },
     {
         id: "projects-12",
         index: 12,
@@ -281,7 +314,7 @@ export const projects = [
     {
         id: "projects-6",
         index: 6,
-        date: "Jan1 2023 - Jan 5 2023",
+        date: "Jan 1 2023 - Jan 5 2023",
         title: "Linear Regression",
         description: "I studied the basics of data analysis based on search linear regression.",
         image: linear_regression,
@@ -464,6 +497,28 @@ export const projects = [
 ];
 
 export const experiences = [
+    {
+        organisation: "Hacktoberfest 2024",
+        logo: hacktoberfest2024_logo,
+        link: "https://hacktoberfest.com/",
+        positions: [
+            {
+                title: "sergomen/pomogoo",
+                duration: "Oct 21 2024 - Oct 31 2024",
+                link: "https://github.com/sergomen/pomogoo",
+                content: [
+                    {
+                        text: "This year I decided to participate in Hacktoberfest and uploaded my project to Open Source. That is, it was no longer others accepting Pull Requests, but I was accepting others. In this way, I further practiced Git, as well as project organization and task description. ",
+                        link: "",
+                    },
+                    {
+                        text: "I also made several of my own Pull Requests. Added a few pages: home, leadership, about the project, profile, adding and updating records. Connected the database, set up authentication.",
+                        link: "https://github.com/sergomen/pomogoo/pulls?q=is%3Apr+is%3Aclosed",
+                    },
+                ]
+            },
+        ]
+    },
     {
         organisation: "Hacktoberfest 2023",
         logo: hacktoberfest2023_logo,

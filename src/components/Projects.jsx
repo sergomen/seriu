@@ -31,7 +31,7 @@ const TechIcon = ({id, index, icon, name}) => (
   </div>
 )
 
-const ProjectCard = ({ index, title, description, image, video, github, url, stack }) => (
+const ProjectCard = ({ index, date, title, description, image, video, github, url, stack }) => (
   <>
   <div className={`flex ${index % 2 !== 0 ? 'md:flex-row' : 'md:flex-row-reverse'} flex-col ${styles.flexCenter} md:my-0 my-10 xl:mt-[35px] relative w-full`}>
     <div  className={`flex-1 ${index % 2 !== 0 ? 'text-left' : 'text-right'} justify-between items-center w-full`}>
@@ -42,11 +42,14 @@ const ProjectCard = ({ index, title, description, image, video, github, url, sta
         {description} <br />
         {/* {github} {url} */}
         <br />
+        {/* <div className={`flex  ${index % 2 !== 0 ? 'flex-row space-x-4' : 'flex-row-reverse space-x-4-reverse'}`}> */}
         <div className={`flex  ${index % 2 !== 0 ? 'flex-row' : 'flex-row-reverse'}`}>
           {stack?.map((tech, index) => (
             <TechIcon key={tech.id} index={index} {...tech} />
           ))}
         </div>
+        <div><p className="xs:text-[8px] ss:text-[12px]  lg:text-[18px] xl:text-[18px] xs:leading-[18px] ss:leading-[18px] ;md:leading-[20px] lg:leading-[20px] xl:leading-[40px]">{date}</p></div>
+        {/* </div> */}
   
         <div className={`flex mt-2 mb-2 ${index % 2 !== 0 ? 'flex-row -mx-2' : 'flex-row-reverse mx-3'}`}>
         {github ? (
