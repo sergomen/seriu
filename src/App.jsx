@@ -3,7 +3,6 @@ import {useState} from 'react';
 
 import styles from "./style";
 import { Navbar, Title, Intro, Projects, Experience, Testimonials, Contact, Footer } from './components';
-import ReactGA from "react-ga4";
 
 // import useDarkSide from "./hook/useDarkSide";
 import Button from './components/Button';
@@ -60,6 +59,4 @@ const App = () => {
   )
 };
 
-ReactGA.initialize("G-N7D1EMG1EJ");
-
-export default App
+export default App;
