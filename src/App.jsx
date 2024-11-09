@@ -60,6 +60,6 @@ const App = () => {
   )
 };
 
-export default App
-
 ReactGA.initialize("G-N7D1EMG1EJ");
+
+export default App
