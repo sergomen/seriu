@@ -13,7 +13,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 try {
   setTimeout(_ => {
     // const ga4react = new ReactGA("G-N7D1EMG1EJ");
-    ReactGA.initialize("G-N7D1EMG1EJ").catch(err => console.error(err));
+    ReactGA.initialize("G-N7D1EMG1EJ");
   }, 4000);
 } catch (err) {
       console.error(err);
