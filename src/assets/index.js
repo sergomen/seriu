@@ -6,6 +6,7 @@ import title from "./title.png";
 import me from "./me.png";
 import quotes from "./quotes.svg";
 
+import mentalhabits from "./mentalhabits.png";
 import pomogoo from "./pomogoo.png";
 import loopka from "./loopka.png";
 import lifevent from "./lifevent.png";
@@ -31,6 +32,7 @@ import ninjamir_video from "./videos/ninjamir_video.mp4";
 import spectrohelper_video from "./videos/spectrohelper_video.mp4";
 import tico_video from "./videos/tico_video.mp4";
 
+import ylab_logo from "./ylab-logo.svg";
 import hacktoberfest2024_logo from "./hacktoberfest2024-logo.png";
 import hacktoberfest2023_logo from "./hacktoberfest2023-logo.png";
 import dennisivy_logo from "./dennisivy-logo.png";
@@ -51,6 +53,7 @@ export {
     me,
     quotes,
 
+    mentalhabits,
     pomogoo,
     loopka,
     lifevent,
@@ -76,6 +79,7 @@ export {
     spectrohelper_video,
     tico_video,
 
+    ylab_logo,
     hacktoberfest2024_logo,
     hacktoberfest2023_logo,
     dennisivy_logo,

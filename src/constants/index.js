@@ -1,12 +1,12 @@
-import {pomogoo, loopka, lifevent, arcanist, ifo, blog, habites, linear_regression, portfolio, cados, ninjamir, spectro, tico} from "../assets";
+import {mentalhabits, pomogoo, loopka, lifevent, arcanist, ifo, blog, habites, linear_regression, portfolio, cados, ninjamir, spectro, tico} from "../assets";
 import {loopka_video, lifevent_video, arcanist_video, ifo_video, habites_video, portfolio_video, cadosdev_video, ninjamir_video, spectrohelper_video, tico_video} from "../assets";
-import {hacktoberfest2024_logo, hacktoberfest2023_logo, dennisivy_logo, ninjamir_logo} from "../assets";
+import {ylab_logo, hacktoberfest2024_logo, hacktoberfest2023_logo, dennisivy_logo, ninjamir_logo} from "../assets";
 import {github, twitter, linkedin} from '../assets';
 
 import {
+    SiJavascript,
     SiNextdotjs,
     SiReact,
-    SiJavascript,
     
     SiVite,
     
@@ -14,6 +14,7 @@ import {
     SiCssmodules,
     SiBootstrap,
     SiTailwindcss,
+    SiBem,
     
     SiMarkdown,
     SiHtml5,
@@ -80,6 +81,44 @@ export const interests = [
 ];
 
 export const projects = [
+    {
+        id: "projects-14",
+        index: 14,
+        date: "Feb 01 2025 - May 14 2025",
+        title: "Mental Habits",
+        description: "Mental Habits is an app for pumping up useful habits, especially mental habits. The app helps to control the progress of the implementation, approaches, which helps to develop them, as if you were working out in the gym.",
+        image: mentalhabits,
+        video: "",
+        github: "",
+        url: "https://mentalhabits.vercel.app/",
+        stack: [
+             {
+                id: "icon-1",
+                icon: SiJavascript,
+                name: "JavaScript"
+            },
+            {
+                id: "icon-2",
+                icon: SiNextdotjs,
+                name: "Next.js"
+            },
+            {
+                id: "icon-3",
+                icon: SiBem,
+                name: "BEM"
+            },
+            {
+                id: "icon-4",
+                icon: SiMongodb,
+                name: "Mongodb"
+            },
+            {
+                id: "icon-5",
+                icon: SiPrisma,
+                name: "Prisma"
+            },
+        ]
+    },
     {
         id: "projects-13",
         index: 13,
@@ -497,6 +536,28 @@ export const projects = [
 ];
 
 export const experiences = [
+    {
+        organisation: "React Intensive Course - YLab",
+        logo: ylab_logo,
+        link: "https://ylab.io/",
+        positions: [
+            {
+                title: "Frontend React Web Developer",
+                duration: "April 17 2025 - May 02 2025",
+                link: "",
+                content: [
+                    {
+                        text: "Implemented the main functionality of the online store. Conducted component decompositions, maintained clean code.",
+                        link: "",
+                    },
+                    {
+                        text: "Worked with state managers, API, services.",
+                        link: "",
+                    },
+                ]
+            },
+        ]
+    },
     {
         organisation: "Hacktoberfest 2024",
         logo: hacktoberfest2024_logo,
