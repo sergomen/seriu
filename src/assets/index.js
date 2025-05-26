@@ -32,7 +32,7 @@ import ninjamir_video from "./videos/ninjamir_video.mp4";
 import spectrohelper_video from "./videos/spectrohelper_video.mp4";
 import tico_video from "./videos/tico_video.mp4";
 
-import ylab_logo from "./ylab-logo.svg";
+import ylab_logo from "./ylab-logo.png";
 import hacktoberfest2024_logo from "./hacktoberfest2024-logo.png";
 import hacktoberfest2023_logo from "./hacktoberfest2023-logo.png";
 import dennisivy_logo from "./dennisivy-logo.png";
